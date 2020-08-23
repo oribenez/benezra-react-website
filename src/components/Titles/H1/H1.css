@@ -1,0 +1,17 @@
+.Wrapper{
+    width: fit-content;
+}
+.Title{
+    font-size: 2vw;
+    margin: 0;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-weight: normal;
+    width: fit-content;
+}
+.Stripe{
+    width: 2vw;
+    height: 0.8vw;
+    background: #fff;
+}
+

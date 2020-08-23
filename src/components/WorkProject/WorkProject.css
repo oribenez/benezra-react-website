@@ -1,0 +1,25 @@
+.WorkProjectWrapper{
+    display: flex;
+    padding: 4vw 0;
+}
+.WorkProjectImg{
+    display: block;
+    width: 50%;
+    object-fit: contain;
+}
+.WorkProjectContent{
+    display: block;
+    padding: 0 0 0 2vw;
+}
+
+.WorkProjectContent h1{
+    font-size: 1.6vw;
+    margin-top: 0;
+    font-weight: 500;
+}
+.WorkProjectContent p{
+    display: block;
+    padding: 0 0 0 3vw;
+    line-height: 200%;
+    letter-spacing: 0.04rem;
+}
