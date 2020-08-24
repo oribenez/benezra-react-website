@@ -8,7 +8,7 @@ import WorkProject from './components/WorkProject/WorkProject';
 import classes from './App.css';
 import Logo from './assets/images/logo.svg';
 import NightSpace from './assets/images/night-space-with-text-and-mountains.svg';
-import NightSpaceTablet from './assets/images/night-space-with-text-and-mountains-tablets-3.svg';
+import NightSpaceTablet from './assets/images/night-space-with-text-and-mountains-tablets.svg';
 import NightSpacePhone from './assets/images/night-space-with-text-and-mountains-phone.svg';
 import NightSpacePhoneMedium from './assets/images/night-space-with-text-and-mountains-phone-medium.svg';
 import NightSpacePhoneSmall from './assets/images/night-space-with-text-and-mountains-phone-small.svg';
@@ -16,8 +16,8 @@ import NightSpacePhoneTiny from './assets/images/night-space-with-text-and-mount
 
 // about section
 import Rocket from './assets/images/rocket2.svg';
-import ProfilePhoto from './assets/images/profile-photo.png';
-import ProfilePhotoTablet from './assets/images/profile picture-circular-tablet.png';
+import ProfilePhoto from './assets/images/profile-photo-min.png';
+import ProfilePhotoTablet from './assets/images/profile picture-circular-tablet-min.png';
 import CodeLangIcn from './assets/images/code-lang-icons.svg'
 import DownloadIcn from './assets/images/download.svg';
 import CVFile from "./assets/files/cv-en.pdf";
@@ -101,6 +101,7 @@ class App extends Component {
 
               </article>
 
+              {/* skills */}
               <article className={classes.SkillsWrapper}>
                 <H1>skills</H1>
                 <p>

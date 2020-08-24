@@ -171,7 +171,7 @@ a.Btn:hover{
     }
 }
 
-@media (min-width: 500px) and (max-width: 899px){
+@media (min-width: 550px) and (max-width: 899px){
 
     .NightSpace{
         display: none;
@@ -260,7 +260,7 @@ a.Btn:hover{
     
 }
 
-@media (min-width: 380px) and (max-width: 499px){
+@media (min-width: 430px) and (max-width: 549px){
 
     .NightSpace{
         display: none;
@@ -344,7 +344,7 @@ a.Btn:hover{
     
 }
 
-@media (min-width: 300px) and (max-width: 379px){
+@media (min-width: 340px) and (max-width: 429px){
 
     .NightSpace{
         display: none;
@@ -429,7 +429,7 @@ a.Btn:hover{
     
 }
 
-@media (max-width: 299px){
+@media (max-width: 339px){
 
     .NightSpace{
         display: none;
@@ -452,8 +452,8 @@ a.Btn:hover{
         margin: 3vw auto 0 auto;
     }
     .HelloLabel{
-        margin: 0;
-        font-size: 9vw;
+        margin: 0 0 12vw 0;
+        font-size: 8vw;
     }
 
     .HeaderSpacer{
