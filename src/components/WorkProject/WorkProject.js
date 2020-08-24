@@ -8,7 +8,7 @@ const WorkProject = (props) => {
         <div className={classes.WorkProjectWrapper} style={props.style}>
             <img src={props.img} alt={props.title} className={classes.WorkProjectImg} />
             <aside className={classes.WorkProjectContent}>
-                <h1>{props.title}</h1>
+                <h2>{props.title}</h2>
                 <p>{props.children}</p>
             </aside>
         </div>
@@ -18,7 +18,7 @@ const WorkProject = (props) => {
         htmlOrder = (
             <div className={classes.WorkProjectWrapper} style={props.style}>
                 <aside className={classes.WorkProjectContent}>
-                    <h1>{props.title}</h1>
+                    <h2>{props.title}</h2>
                     <p>{props.children}</p>
                 </aside>
                 <img src={props.img} alt={props.title} className={classes.WorkProjectImg} />

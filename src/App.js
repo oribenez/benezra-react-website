@@ -8,12 +8,17 @@ import WorkProject from './components/WorkProject/WorkProject';
 import classes from './App.css';
 import Logo from './assets/images/logo.svg';
 import NightSpace from './assets/images/night-space-with-text-and-mountains.svg';
+import NightSpaceTablet from './assets/images/night-space-with-text-and-mountains-tablets-3.svg';
+import NightSpacePhone from './assets/images/night-space-with-text-and-mountains-phone.svg';
+import NightSpacePhoneMedium from './assets/images/night-space-with-text-and-mountains-phone-medium.svg';
+import NightSpacePhoneSmall from './assets/images/night-space-with-text-and-mountains-phone-small.svg';
+import NightSpacePhoneTiny from './assets/images/night-space-with-text-and-mountains-phone-tiny.svg';
 
 // about section
 import Rocket from './assets/images/rocket2.svg';
 import ProfilePhoto from './assets/images/profile-photo.png';
-import LinkedInBtn from './assets/images/linkedin-btn.svg';
-import GitHubBtn from './assets/images/github-btn.svg';
+import ProfilePhotoTablet from './assets/images/profile picture-circular-tablet.png';
+import CodeLangIcn from './assets/images/code-lang-icons.svg'
 import DownloadIcn from './assets/images/download.svg';
 import CVFile from "./assets/files/cv-en.pdf";
 import EmailIcn from './assets/images/email-icn.svg'
@@ -31,6 +36,11 @@ class App extends Component {
       <div className={classes.App}>
         {/* page design - space background and mountains */}
         <img src={NightSpace} className={classes.NightSpace} alt="" />
+        <img src={NightSpaceTablet} className={classes.NightSpaceTablet} alt="" />
+        <img src={NightSpacePhone} className={classes.NightSpacePhone} alt="" />
+        <img src={NightSpacePhoneMedium} className={classes.NightSpacePhoneMedium} alt="" />
+        <img src={NightSpacePhoneSmall} className={classes.NightSpacePhoneSmall} alt="" />
+        <img src={NightSpacePhoneTiny} className={classes.NightSpacePhoneTiny} alt="" />
 
         <div className={classes.Wrapper}>{/* content */}
 
@@ -40,7 +50,7 @@ class App extends Component {
             <span className={classes.HelloLabel}>Hi there,<br />
   I’m Ori, nice to meet you.</span>
 
-            <div style={{ width: '100%', height: '33vw', display: 'block' }}></div>
+            <div className={classes.HeaderSpacer}></div>
           </header>
 
           {/* about section */}
@@ -63,6 +73,8 @@ class App extends Component {
 
             <aside className={classes.WrapperContent}>
 
+              <img src={ProfilePhotoTablet} alt="" className={classes.ProfilePhotoTablet} />
+
               {/* about */}
               <article >
                 <H1>about</H1>
@@ -73,7 +85,7 @@ class App extends Component {
                   and a desire to implement new ideas that will yield the next breakthrough.
                   eager to expand my knowledge and to investigate new technologies.
                   Hope you’ll like my work.
-                  <br /><br />
+                  <br />
                   <a href='https://www.linkedin.com/in/ori-ben-ezra-3a59508b/' alt='LinkedIn Profile' target="_blank" >
                     <div className={classes.SocialIcon}>
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><defs><style></style></defs><title>Asset 13</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g id="Text_Container" data-name="Text Container"><g id="About_Container" data-name="About Container"><path class="cls-1" d="M26.94,0H3.06A3.06,3.06,0,0,0,0,3.06V26.94A3.06,3.06,0,0,0,3.06,30H26.94A3.06,3.06,0,0,0,30,26.94V3.06A3.06,3.06,0,0,0,26.94,0ZM9.3,24.29h-4v-13h4Zm-2-14.55a2,2,0,0,1-2.09-2,2,2,0,0,1,2.15-2,2,2,0,1,1-.06,4ZM24.83,24.29h-4V17.11c0-1.67-.58-2.81-2-2.81a2.21,2.21,0,0,0-2.06,1.51,2.77,2.77,0,0,0-.14,1v7.47h-4V15.46c0-1.61-.06-3-.11-4.13h3.5l.18,1.8h.08a4.65,4.65,0,0,1,4-2.09c2.65,0,4.64,1.77,4.64,5.59v7.66Z" /></g></g></g></g></svg>
@@ -89,14 +101,23 @@ class App extends Component {
 
               </article>
 
+              <article className={classes.SkillsWrapper}>
+                <H1>skills</H1>
+                <p>
+                  C#, ASP.NET, SQL, JS, React, HTML, CSS, Photoshop, Illustrator, M.Office, Git, Visual Studio.
+                  <br />
+                  <img src={CodeLangIcn} alt='' className={classes.CodeLangIcn} />
+                </p>
+              </article>
+
               {/* curriculum vitae */}
               <article>
                 <H1>curriculum vitae</H1>
                 <p>
                   Check out my CV for more information.
-                  <br /><br />
+                  <br />
                   <a href={CVFile} className={classes.Btn}>
-                    <img src={DownloadIcn} alt='' style={{ width: '2vw' }} />
+                    <img src={DownloadIcn} alt='' className={classes.DownloadIcon} />
                     <span>&nbsp;&nbsp; CV - PDF</span>
                   </a>
                 </p>
@@ -108,7 +129,7 @@ class App extends Component {
                 <p>
                   Feel free to contact me! I’m always available to bounce
                   thoughts around and I'd love to collaborate.
-                  <br /><br />
+                  <br />
                   <span>
                     <img src={EmailIcn} alt='' className={classes.ContactEmailIcn} />&nbsp;&nbsp;
                   oriben467@gmail.com</span>
