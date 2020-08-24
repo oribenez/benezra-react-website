@@ -20,7 +20,7 @@ import ProfilePhoto from './assets/images/profile-photo-min.png';
 import ProfilePhotoTablet from './assets/images/profile picture-circular-tablet-min.png';
 import CodeLangIcn from './assets/images/code-lang-icons.svg'
 import DownloadIcn from './assets/images/download.svg';
-import CVFile from "./assets/files/cv-en.pdf";
+import CVFile from "./assets/files/ori-benezra-cv-en.pdf";
 import EmailIcn from './assets/images/email-icn.svg'
 import PhoneIcn from './assets/images/phone-icn.svg'
 
@@ -79,11 +79,11 @@ class App extends Component {
               <article >
                 <H1>about</H1>
                 <p>
-                  I'm Ori Ben-Ezra, a program developer living in Lapid, Israel.
-                  Love my family,  coffee and coding.
+                  My name is Ori Ben-Ezra, a program developer living in Lapid, Israel.
+                  I Love my family,  coffee and coding.
                   My interest in coding stems from a fascination with the dynamic nature of technology
                   and a desire to implement new ideas that will yield the next breakthrough.
-                  eager to expand my knowledge and to investigate new technologies.
+                  I'm eager to expand my knowledge and to investigate new technologies.
                   Hope you’ll like my work.
                   <br />
                   <a href='https://www.linkedin.com/in/ori-ben-ezra-3a59508b/' alt='LinkedIn Profile' target="_blank" >
