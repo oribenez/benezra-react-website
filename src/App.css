@@ -281,9 +281,6 @@ a.Btn:hover{
     }
 
     /* about section */
-    .WrapperSectionAbout{
-        /* margin: 0 0 20vw 0; */
-    }
     .WrapperContent{
         margin:0;
         padding: 0;
@@ -375,9 +372,6 @@ a.Btn:hover{
     }
 
     /* about section */
-    /* .WrapperSectionAbout{
-        margin: 0 0 30vw 0;
-    } */
     .WrapperContent{
         margin:0;
         padding: 0;
@@ -427,7 +421,7 @@ a.Btn:hover{
     
 }
 
-@media (min-width: 340px) and (max-width: 429px){
+@media (min-width: 380px) and (max-width: 429px){
 
     .NightSpace{
         display: none;
@@ -463,9 +457,10 @@ a.Btn:hover{
     }
 
     /* about section */
-    /* .WrapperSectionAbout{
-        margin: 0 0 40vw 0;
-    } */
+    .WrapperSectionAbout{
+        padding: 0 0 45vw 0;
+    }
+
     .WrapperContent{
         margin:0;
         padding: 0;
@@ -516,7 +511,7 @@ a.Btn:hover{
     
 }
 
-@media (max-width: 339px){
+@media (min-width: 270px) and (max-width: 379px){
 
     .NightSpace{
         display: none;
@@ -552,9 +547,98 @@ a.Btn:hover{
     }
 
     /* about section */
-    /* .WrapperSectionAbout{
-        margin: 0 0 30vw 0;
-    } */
+    .WrapperSectionAbout{
+        padding: 0 0 40vw 0;
+    }
+    .WrapperContent{
+        margin:0;
+        padding: 0;
+    }
+    .WrapperContent h1{
+        font-size: 9.5vw;
+    }
+
+    .WrapperContent p{
+        line-height: 150%;
+        font-size: 5.5vw;
+    }
+    .ProfilePhotoTablet{
+        display: block;
+        width: 50vw;
+        margin: 0 auto;
+    }
+    .WrapperRocket{
+        display: none;
+    }
+    .SocialIcon{
+        width: 13vw;
+        margin: 2vw 5vw 0 0;
+    }
+
+    .DownloadIcon{
+        width: 8vw;
+    }
+    a.Btn{
+        font-size: 4.5vw;
+    }
+    .ContactEmailIcn, .ContactPhoneIcn{
+        width: 3vw;
+    }
+    .SkillsWrapper{
+        display: block;
+    }
+    .CodeLangIcn{
+        margin: 3vw 0 0 0;
+    }
+
+    .WrapperSectionPortfolio h1{
+        font-size: 8vw;
+    }
+    .WrapperSectionPortfolio h2{
+        font-size: 6.6vw;
+    }
+    
+}
+
+@media (max-width: 269px){
+
+    .NightSpace{
+        display: none;
+    }
+    .NightSpacePhoneTiny{
+        top: 0;
+        right: 0;
+        display: block;
+        position: absolute; 
+        z-index: 100;
+        margin: 60vw 0 0 0;
+    }
+/* header */
+    .Wrapper{
+        width: 95%;
+    }
+    
+    .Logo{
+        width: 25%;
+        margin: 3vw auto 0 auto;
+    }
+    .HelloLabel{
+        margin: 0 0 12vw 0;
+        font-size: 8vw;
+    }
+
+    .ScrollDownContainer{
+        margin: 40vw auto 0 auto;
+    }
+
+    .HeaderSpacer{
+        height: 50vw;
+    }
+
+    /* about section */
+    .WrapperSectionAbout{
+        padding: 0 0 30vw 0;
+    }
     .WrapperContent{
         margin:0;
         padding: 0;
