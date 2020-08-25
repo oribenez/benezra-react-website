@@ -7,7 +7,7 @@ import WorkProject from './components/WorkProject/WorkProject';
 // header section
 import classes from './App.css';
 import Logo from './assets/images/logo.svg';
-import NightSpace from './assets/images/night-space-with-text-and-mountains.svg';
+import NightSpace from './assets/images/night-space-with-text-and-mountains-2.svg';
 import NightSpaceTablet from './assets/images/night-space-with-text-and-mountains-tablets.svg';
 import NightSpacePhone from './assets/images/night-space-with-text-and-mountains-phone.svg';
 import NightSpacePhoneMedium from './assets/images/night-space-with-text-and-mountains-phone-medium.svg';
@@ -28,6 +28,9 @@ import PhoneIcn from './assets/images/phone-icn.svg'
 import CleanHeadImg from './assets/images/mac-Img-cleanhead-main.png';
 import RideItImg from './assets/images/mac-Img-rideit.png';
 import BeAzmiImg from './assets/images/beazmi-app-show-2.png';
+import HangmanImg from './assets/images/hangman-game.png';
+import PixelartImg from './assets/images/pixelart-website.png';
+
 
 
 class App extends Component {
@@ -50,7 +53,13 @@ class App extends Component {
             <span className={classes.HelloLabel}>Hi there,<br />
   I’m Ori, nice to meet you.</span>
 
-            <div className={classes.HeaderSpacer}></div>
+            <div className={classes.ScrollDownContainer}>
+              <div className={classes.Chevron}></div>
+              <div className={classes.Chevron}></div>
+              <div className={classes.Chevron}></div>
+            </div>
+
+            {/* <div className={classes.HeaderSpacer}></div> */}
           </header>
 
           {/* about section */}
@@ -181,6 +190,25 @@ class App extends Component {
               </WorkProject>
             </div>
           </div>
+
+          {/* Hangman Game */}
+          <div style={{ background: '#eeeeee' }}>
+            <div className={classes.Wrapper}>
+              <WorkProject title='Hangman Game' img={HangmanImg} rtl>
+                Hangman is a paper and pencil guessing game for two or more players. One player thinks of a word, phrase or sentence and the other(s) tries to guess it by suggesting letters within a certain number of guesses.
+              </WorkProject>
+            </div>
+          </div>
+
+          {/* pixelart website */}
+          <div style={{ background: '#fff' }}>
+            <div className={classes.Wrapper}>
+              <WorkProject title='pixelart' img={PixelartImg}>
+                Static website for small businesses
+              </WorkProject>
+            </div>
+          </div>
+
         </section>
       </div>
     );

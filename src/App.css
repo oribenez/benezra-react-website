@@ -3,6 +3,9 @@ body{
     font-family: 'Roboto Slab', serif;
     font-weight: 300;
 }
+:not(svg,g){
+    transition: ease 0.6s all;
+}
 
 /*  */
 header{
@@ -47,6 +50,73 @@ header{
     z-index: 110;
 }
 
+/* scroll down icon */
+.ScrollDownContainer {
+    position: sticky;
+    width: 28px;
+    height: 65px;
+    margin: 30vw auto 0 auto;
+    z-index: 110;
+    bottom: 0;
+  }
+  .Chevron {
+    position: absolute;
+    width: 28px;
+    height: 8px;
+    opacity: 0;
+    transform: scale3d(0.5, 0.5, 0.5);
+    animation: move 3s ease-out infinite;
+  }
+  .Chevron:first-child {
+    animation: move 3s ease-out 1s infinite;
+  }
+  
+  .Chevron:nth-child(2) {
+    animation: move 3s ease-out 2s infinite;
+  }
+  .Chevron:before,
+  .Chevron:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 51%;
+    background: #eee;
+  }
+  .Chevron:before {
+    left: 0;
+    transform: skew(0deg, 30deg);
+  }
+  .Chevron:after {
+    right: 0;
+    width: 50%;
+    transform: skew(0deg, -30deg);
+  }
+  @keyframes move {
+    25% {
+      opacity: 1;
+  
+    }
+    33% {
+      opacity: 1;
+      transform: translateY(30px);
+    }
+    67% {
+      opacity: 1;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+    }
+  }
+  @keyframes pulse {
+    to {
+      opacity: 1;
+    }
+  }
+
+
 .HeaderSpacer{
     width: 100%;
     height: 33vw;
@@ -56,7 +126,7 @@ header{
 /*  */
 .WrapperSectionAbout{
     display: flex;
-    margin: 0 0 32vw 0;
+    padding: 0 0 30vw 0;
 }
 .WrapperRocket{
     display: block;
@@ -146,7 +216,6 @@ a.Btn:hover{
     position: relative;
     z-index: 120;
     color: #333;
-    padding: 4vw 0 0 0;
 }
 
 
@@ -197,13 +266,23 @@ a.Btn:hover{
         font-size: 4.5vw;
     }
 
+    .ScrollDownContainer {
+        margin: 37vw auto 0 auto;
+    }
+
+    /* @media (min-width: 550px) and (max-width: 680px){
+        .ScrollDownContainer {
+            margin: 39vw auto 0 auto;
+        }
+    } */
+
     .HeaderSpacer{
         height: 50vw;
     }
 
     /* about section */
     .WrapperSectionAbout{
-        margin: 0 0 20vw 0;
+        /* margin: 0 0 20vw 0; */
     }
     .WrapperContent{
         margin:0;
@@ -287,14 +366,18 @@ a.Btn:hover{
         font-size: 6.5vw;
     }
 
+    .ScrollDownContainer{
+        margin: 34vw auto 0 auto;
+    }
+
     .HeaderSpacer{
         height: 50vw;
     }
 
     /* about section */
-    .WrapperSectionAbout{
+    /* .WrapperSectionAbout{
         margin: 0 0 30vw 0;
-    }
+    } */
     .WrapperContent{
         margin:0;
         padding: 0;
@@ -371,14 +454,18 @@ a.Btn:hover{
         font-size: 7vw;
     }
 
+    .ScrollDownContainer{
+        margin: 30vw auto 0 auto;
+    }
+
     .HeaderSpacer{
         height: 50vw;
     }
 
     /* about section */
-    .WrapperSectionAbout{
+    /* .WrapperSectionAbout{
         margin: 0 0 40vw 0;
-    }
+    } */
     .WrapperContent{
         margin:0;
         padding: 0;
@@ -456,14 +543,18 @@ a.Btn:hover{
         font-size: 8vw;
     }
 
+    .ScrollDownContainer{
+        margin: 40vw auto 0 auto;
+    }
+
     .HeaderSpacer{
         height: 50vw;
     }
 
     /* about section */
-    .WrapperSectionAbout{
+    /* .WrapperSectionAbout{
         margin: 0 0 30vw 0;
-    }
+    } */
     .WrapperContent{
         margin:0;
         padding: 0;
