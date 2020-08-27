@@ -51,7 +51,7 @@ class App extends Component {
           <header>
             <img src={Logo} alt="Logo" className={classes.Logo} />
             <span className={classes.HelloLabel}>Hi there,<br />
-  I’m Ori, nice to meet you.</span>
+  I’m Ori, a <strong>program developer.</strong></span>
 
             <div className={classes.ScrollDownContainer}>
               <div className={classes.Chevron}></div>
@@ -97,12 +97,12 @@ class App extends Component {
                   <br />
                   <a href='https://www.linkedin.com/in/ori-ben-ezra-3a59508b/' alt='LinkedIn Profile' target="_blank" >
                     <div className={classes.SocialIcon}>
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><defs><style></style></defs><title>Asset 13</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g id="Text_Container" data-name="Text Container"><g id="About_Container" data-name="About Container"><path class="cls-1" d="M26.94,0H3.06A3.06,3.06,0,0,0,0,3.06V26.94A3.06,3.06,0,0,0,3.06,30H26.94A3.06,3.06,0,0,0,30,26.94V3.06A3.06,3.06,0,0,0,26.94,0ZM9.3,24.29h-4v-13h4Zm-2-14.55a2,2,0,0,1-2.09-2,2,2,0,0,1,2.15-2,2,2,0,1,1-.06,4ZM24.83,24.29h-4V17.11c0-1.67-.58-2.81-2-2.81a2.21,2.21,0,0,0-2.06,1.51,2.77,2.77,0,0,0-.14,1v7.47h-4V15.46c0-1.61-.06-3-.11-4.13h3.5l.18,1.8h.08a4.65,4.65,0,0,1,4-2.09c2.65,0,4.64,1.77,4.64,5.59v7.66Z" /></g></g></g></g></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><defs><style></style></defs><title>Asset 13</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g id="Text_Container" data-name="Text Container"><g id="About_Container" data-name="About Container"><path d="M26.94,0H3.06A3.06,3.06,0,0,0,0,3.06V26.94A3.06,3.06,0,0,0,3.06,30H26.94A3.06,3.06,0,0,0,30,26.94V3.06A3.06,3.06,0,0,0,26.94,0ZM9.3,24.29h-4v-13h4Zm-2-14.55a2,2,0,0,1-2.09-2,2,2,0,0,1,2.15-2,2,2,0,1,1-.06,4ZM24.83,24.29h-4V17.11c0-1.67-.58-2.81-2-2.81a2.21,2.21,0,0,0-2.06,1.51,2.77,2.77,0,0,0-.14,1v7.47h-4V15.46c0-1.61-.06-3-.11-4.13h3.5l.18,1.8h.08a4.65,4.65,0,0,1,4-2.09c2.65,0,4.64,1.77,4.64,5.59v7.66Z" /></g></g></g></g></svg>
                     </div>
                   </a>
                   <a href='https://github.com/oribenez' alt='GitHub Proflie' target="_blank">
                     <div className={classes.SocialIcon}>
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.78 31"><defs></defs><title>Asset 14</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g id="Text_Container" data-name="Text Container"><g id="About_Container" data-name="About Container"><path class="cls-1" d="M15.89,0a15.89,15.89,0,0,0-5,31c.79.15,1.08-.34,1.08-.76s0-1.63,0-3c-4.42,1-5.35-1.88-5.35-1.88a4.24,4.24,0,0,0-1.77-2.32c-1.44-1,.11-1,.11-1a3.34,3.34,0,0,1,2.44,1.64A3.37,3.37,0,0,0,12,25a3.43,3.43,0,0,1,1-2.12c-3.53-.4-7.24-1.77-7.24-7.86A6.13,6.13,0,0,1,7.39,10.8a5.76,5.76,0,0,1,.15-4.21s1.34-.43,4.37,1.63a15.21,15.21,0,0,1,8,0c3-2.06,4.37-1.63,4.37-1.63a5.72,5.72,0,0,1,.16,4.21A6.16,6.16,0,0,1,26,15.06c0,6.11-3.72,7.45-7.26,7.85a3.79,3.79,0,0,1,1.08,2.94c0,2.12,0,3.83,0,4.36s.29.92,1.09.76a15.89,15.89,0,0,0-5-31Z" /></g></g></g></g></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.78 31"><defs></defs><title>Asset 14</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g id="Text_Container" data-name="Text Container"><g id="About_Container" data-name="About Container"><path d="M15.89,0a15.89,15.89,0,0,0-5,31c.79.15,1.08-.34,1.08-.76s0-1.63,0-3c-4.42,1-5.35-1.88-5.35-1.88a4.24,4.24,0,0,0-1.77-2.32c-1.44-1,.11-1,.11-1a3.34,3.34,0,0,1,2.44,1.64A3.37,3.37,0,0,0,12,25a3.43,3.43,0,0,1,1-2.12c-3.53-.4-7.24-1.77-7.24-7.86A6.13,6.13,0,0,1,7.39,10.8a5.76,5.76,0,0,1,.15-4.21s1.34-.43,4.37,1.63a15.21,15.21,0,0,1,8,0c3-2.06,4.37-1.63,4.37-1.63a5.72,5.72,0,0,1,.16,4.21A6.16,6.16,0,0,1,26,15.06c0,6.11-3.72,7.45-7.26,7.85a3.79,3.79,0,0,1,1.08,2.94c0,2.12,0,3.83,0,4.36s.29.92,1.09.76a15.89,15.89,0,0,0-5-31Z" /></g></g></g></g></svg>
                     </div>
                   </a>
                 </p>
@@ -182,20 +182,23 @@ class App extends Component {
             </div>
           </div>
 
-          {/* Be Atzmi Project */}
+          {/* Hangman Game */}
           <div style={{ background: '#fff' }}>
             <div className={classes.Wrapper}>
-              <WorkProject title='Be Atzmi' img={BeAzmiImg}>
-                Windows Phone 8 application that helps the chronic unemployed get into the work cycle.
+              <WorkProject title='Hangman Game' img={HangmanImg}>
+                Hangman is a paper and pencil guessing game for two or more players. One player thinks of a word, phrase or sentence and the other(s) tries to guess it by suggesting letters within a certain number of guesses.
+                <a href="http://hangmanplay.com" className={classes.Btn} target='blank'>
+                  <span> To the Game</span>
+                </a>
               </WorkProject>
             </div>
           </div>
 
-          {/* Hangman Game */}
-          <div style={{ background: '#eeeeee' }}>
+          {/* Be Atzmi Project */}
+          <div style={{ background: '#eee' }}>
             <div className={classes.Wrapper}>
-              <WorkProject title='Hangman Game' img={HangmanImg} rtl>
-                Hangman is a paper and pencil guessing game for two or more players. One player thinks of a word, phrase or sentence and the other(s) tries to guess it by suggesting letters within a certain number of guesses.
+              <WorkProject title='Be Atzmi' img={BeAzmiImg} rtl>
+                Windows Phone 8 application that helps the chronic unemployed get into the work cycle.
               </WorkProject>
             </div>
           </div>

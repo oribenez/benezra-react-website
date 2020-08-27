@@ -40,7 +40,8 @@ header{
     display: block;
 }
 .HelloLabel{
-    font-family: 'Pacifico', cursive;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 500;
     color: #686868;
     font-size: 3vw;
     display: block;
@@ -126,7 +127,7 @@ header{
 /*  */
 .WrapperSectionAbout{
     display: flex;
-    padding: 0 0 30vw 0;
+    padding: 0 0 34vw 0;
 }
 .WrapperRocket{
     display: block;
@@ -146,10 +147,12 @@ header{
     margin: 12.4% 9.8%;
 }
 .SkillsChart{
-    width: 24vw;
-    margin: 30.5vw 0 0 5vw;
+    width: 22vw;
+    margin: 30.5vw 0 0 6vw;
     position: absolute;
     z-index: 112;
+    align-items: center;
+    display: grid;
 }
 
 /* content about */
@@ -167,7 +170,7 @@ header{
     padding: 0 0 0 3vw;
     font-size: 1vw;
     line-height: 200%;
-    letter-spacing: 0.04rem;
+    letter-spacing: 0.5px;
 } 
 .SocialIcon{
     width: 2vw;
@@ -219,7 +222,7 @@ a.Btn:hover{
 }
 
 
-@media (min-width: 900px) and (max-width: 1300px){
+@media screen and (min-width: 900px) and (max-width: 1300px){
     .Wrapper{
         width: 95%;
     }
@@ -227,12 +230,15 @@ a.Btn:hover{
         margin: 0 10%;
     }
 
+    .WrapperSectionAbout{
+        padding: 0 0 27vw 0;
+    }
     .SocialIcon{
         width: 3vw;
     }
 
     .WrapperContent{
-        padding: 11vw 0 0 0;
+        padding: 14vw 0 0 0;
     }
     .WrapperContent p{
         line-height: 150%;
@@ -240,7 +246,7 @@ a.Btn:hover{
     }
 }
 
-@media (min-width: 550px) and (max-width: 899px){
+@media screen and (min-width: 550px) and (max-width: 899px){
 
     .NightSpace{
         display: none;
@@ -336,7 +342,7 @@ a.Btn:hover{
     
 }
 
-@media (min-width: 430px) and (max-width: 549px){
+@media screen and (min-width: 430px) and (max-width: 549px){
 
     .NightSpace{
         display: none;
@@ -421,7 +427,7 @@ a.Btn:hover{
     
 }
 
-@media (min-width: 380px) and (max-width: 429px){
+@media screen and (min-width: 380px) and (max-width: 429px){
 
     .NightSpace{
         display: none;
@@ -458,7 +464,7 @@ a.Btn:hover{
 
     /* about section */
     .WrapperSectionAbout{
-        padding: 0 0 45vw 0;
+        padding: 0 0 35vw 0;
     }
 
     .WrapperContent{
@@ -511,7 +517,7 @@ a.Btn:hover{
     
 }
 
-@media (min-width: 270px) and (max-width: 379px){
+@media screen and (min-width: 270px) and (max-width: 379px){
 
     .NightSpace{
         display: none;
@@ -600,7 +606,7 @@ a.Btn:hover{
     
 }
 
-@media (max-width: 269px){
+@media screen and (max-width: 269px){
 
     .NightSpace{
         display: none;
