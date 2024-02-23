@@ -30,6 +30,8 @@ import RideItImg from './assets/images/mac-Img-rideit.png';
 import BeAzmiImg from './assets/images/beazmi-app-show-2.png';
 import HangmanImg from './assets/images/hangman-game.png';
 import PixelartImg from './assets/images/pixelart-website.png';
+import MateAppImg from './assets/images/notify_mate_5.png';
+
 
 
 
@@ -68,15 +70,12 @@ class App extends Component {
               <img src={Rocket} className={classes.Rocket} alt="" />
               <img src={ProfilePhoto} className={classes.ProfilePhoto} alt="" />
               <div className={classes.SkillsChart}>
-                <H1 style={{ margin: '0 auto' }}>skills</H1>
-                <ProgressBar fill='95%' label='C#' />
-                <ProgressBar fill='95%' label='.NET' />
-                <ProgressBar fill='80%' label='JS' />
-                <ProgressBar fill='50%' label='React.js' />
-                <ProgressBar fill='95%' label='HTML' />
-                <ProgressBar fill='95%' label='CSS' />
-                <ProgressBar fill='70%' label='Ps, Ai' />
-                <ProgressBar fill='95%' label='M.Office' />
+                <H1 style={{ margin: '0 auto 5px auto' }}>skills</H1>
+                {/* <ProgressBar fill='95%' label='JS' />
+                <ProgressBar fill='95%' label='React.js' /> */}
+                <div style={{ background: '#669898', color: '#fff', padding: '10px', fontSize:'1.2vw;', letterSpacing: '0.1vw' }}><b>Code:</b> JS, React.js, Node.js, MongoDB, CSS, HTML, SQL, OOP, Java, C++, Python, C#, ASP.NET, Computer Vision</div>
+                <div style={{ background: '#025159', color: '#fff', padding: '10px', fontSize:'1.2vw;', letterSpacing: '0.1vw' }}><b>Api's & Tools: </b>Shopify DEV, Photoshop, Illustrator, Figma, Git, Excel</div>
+                <div style={{ background: '#669898', color: '#fff', padding: '10px', fontSize:'1.2vw;', letterSpacing: '0.1vw' }}><b>Personal:</b> Problem Solving, Team Player, Deep Researcher, Ambitious</div>
               </div>
             </aside>
 
@@ -95,7 +94,7 @@ class App extends Component {
                   I'm eager to expand my knowledge and to investigate new technologies.
                   Hope you’ll like my work.
                   <br />
-                  <a href='https://www.linkedin.com/in/ori-ben-ezra-3a59508b/' alt='LinkedIn Profile' target="_blank" >
+                  <a href='https://www.linkedin.com/in/oribenezra' alt='LinkedIn Profile' target="_blank" >
                     <div className={classes.SocialIcon}>
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><defs><style></style></defs><title>Asset 13</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g id="Text_Container" data-name="Text Container"><g id="About_Container" data-name="About Container"><path d="M26.94,0H3.06A3.06,3.06,0,0,0,0,3.06V26.94A3.06,3.06,0,0,0,3.06,30H26.94A3.06,3.06,0,0,0,30,26.94V3.06A3.06,3.06,0,0,0,26.94,0ZM9.3,24.29h-4v-13h4Zm-2-14.55a2,2,0,0,1-2.09-2,2,2,0,0,1,2.15-2,2,2,0,1,1-.06,4ZM24.83,24.29h-4V17.11c0-1.67-.58-2.81-2-2.81a2.21,2.21,0,0,0-2.06,1.51,2.77,2.77,0,0,0-.14,1v7.47h-4V15.46c0-1.61-.06-3-.11-4.13h3.5l.18,1.8h.08a4.65,4.65,0,0,1,4-2.09c2.65,0,4.64,1.77,4.64,5.59v7.66Z" /></g></g></g></g></svg>
                     </div>
@@ -159,9 +158,24 @@ class App extends Component {
         {/* portfolio section */}
         <section className={classes.WrapperSectionPortfolio}>
           <H1 color='#333333' style={{ margin: '0 auto 3vw auto' }}>portfolio</H1>
+          
+          {/* Mate: Restock alerts Project */}
+          <div style={{ background: '#1e1e1e', color: '#fff' }}>
+            <div className={classes.Wrapper}>
+              <WorkProject title='Mate: Restock alerts' img={MateAppImg} width='100px'>
+              Application built for Shopify merchants to increase sales by retrieving lost customers. 
+The app adds a button “Notify me” for every product page. 
+Customers sign up to the app service to get notified when the product they want is back in stock /price drop.
+This is the best project I’ve ever created all by myself using MERN stack, designing skills, and planning.
+              <a href="https://apps.shopify.com/notify-mate-price-drop-alerts" className={classes.Btn} target='blank'>
+                  <span> To the App</span>
+                </a>
+              </WorkProject>
+            </div>
+          </div>
 
           {/* Clean Head Project */}
-          <div style={{ background: '#fff' }}>
+          <div style={{ background: '#eeeeee' }}>
             <div className={classes.Wrapper}>
               <WorkProject title='Clean Head' img={CleanHeadImg}>
                 Web software that effectively links teachers and students.
@@ -174,7 +188,7 @@ class App extends Component {
           </div>
 
           {/* Ride It Project */}
-          <div style={{ background: '#eeeeee' }}>
+          <div style={{ background: '#1e1e1e', color: '#fff' }}>
             <div className={classes.Wrapper}>
               <WorkProject title='Ride It' img={RideItImg} rtl>
                 An app for finding different types of cycling routes in Israel, setting up meetings with riders for shared cycling to get to know new people.
@@ -183,7 +197,7 @@ class App extends Component {
           </div>
 
           {/* Hangman Game */}
-          <div style={{ background: '#fff' }}>
+          <div style={{ background: '#eee' }}>
             <div className={classes.Wrapper}>
               <WorkProject title='Hangman Game' img={HangmanImg}>
                 Hangman is a paper and pencil guessing game for two or more players. One player thinks of a word, phrase or sentence and the other(s) tries to guess it by suggesting letters within a certain number of guesses.
@@ -195,7 +209,7 @@ class App extends Component {
           </div>
 
           {/* Be Atzmi Project */}
-          <div style={{ background: '#eee' }}>
+          <div style={{ background: '#1e1e1e', color: '#fff' }}>
             <div className={classes.Wrapper}>
               <WorkProject title='Be Atzmi' img={BeAzmiImg} rtl>
                 Windows Phone 8 application that helps the chronic unemployed get into the work cycle.
@@ -204,7 +218,7 @@ class App extends Component {
           </div>
 
           {/* pixelart website */}
-          <div style={{ background: '#fff' }}>
+          <div style={{ background: '#1e1e1e', color: '#fff' }}>
             <div className={classes.Wrapper}>
               <WorkProject title='pixelart' img={PixelartImg}>
                 Static website for small businesses

@@ -6,7 +6,7 @@ const WorkProject = (props) => {
 
     let htmlOrder = (
         <div className={classes.WorkProjectWrapper} style={props.style}>
-            <img src={props.img} alt={props.title} className={classes.WorkProjectImg} />
+            <img src={props.img} alt={props.title} className={classes.WorkProjectImg} style={{ width:props.width }} />
             <aside className={classes.WorkProjectContent}>
                 <h2>{props.title}</h2>
                 <p>{props.children}</p>
