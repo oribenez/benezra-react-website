@@ -218,7 +218,7 @@ This is the best project I’ve ever created all by myself using MERN stack, des
           </div>
 
           {/* pixelart website */}
-          <div style={{ background: '#1e1e1e', color: '#fff' }}>
+          <div style={{ background: '#eee' }}>
             <div className={classes.Wrapper}>
               <WorkProject title='pixelart' img={PixelartImg}>
                 Static website for small businesses
