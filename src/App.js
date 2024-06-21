@@ -53,7 +53,7 @@ class App extends Component {
           <header>
             <img src={Logo} alt="Logo" className={classes.Logo} />
             <span className={classes.HelloLabel}>Hi there,<br />
-  I’m Ori, a <strong>program developer.</strong></span>
+  I’m Ori, a <strong>program developerr. </strong></span>
 
             <div className={classes.ScrollDownContainer}>
               <div className={classes.Chevron}></div>
